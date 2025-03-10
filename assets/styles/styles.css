@@ -346,17 +346,22 @@ a {
   color: inherit;
 }
 
+* {
+  margin: 0;
+}
+
 header {
   display: flex;
   justify-content: center;
 }
 header .header_center {
   width: 1180px;
-  padding: 0 1.5rem;
+  padding: 1rem 1.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid #888888;
+  box-sizing: border-box;
 }
 header .header_center .header_left {
   display: flex;
@@ -379,4 +384,26 @@ header .header_center .header_left .header_name {
 
 :root {
   font-family: "Poppins", sans-serif;
+}
+
+.ejercicio_1 {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+.ejercicio_1 .ej_1_center {
+  width: 1180px;
+  padding: 1.5rem;
+  border: 1px solid #c9c9c9;
+  border-radius: 1.5rem;
+  box-sizing: border-box;
+}
+.ejercicio_1 .ej_1_center .ej_1_title .exercise_title {
+  margin-bottom: 0.5rem;
+}
+.ejercicio_1 .ej_1_center .ej_1_title .exercise_description {
+  font-weight: 300;
+}
+.ejercicio_1 .ej_1_center .exercise_content {
+  margin-top: 1.5rem;
 }/*# sourceMappingURL=styles.css.map */

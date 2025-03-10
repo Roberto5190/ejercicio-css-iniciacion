@@ -1,14 +1,15 @@
 header{
     display: flex;
     justify-content: center;
-    
     .header_center{
         width: 1180px;
-        padding: 0 1.5rem;
+        padding: 1rem 1.5rem;
+        
         display: flex;
         justify-content: space-between;
         align-items: center;
         border-bottom: 1px solid #888888;
+        box-sizing: border-box;
         .header_left{
             display: flex;
             align-items: center;

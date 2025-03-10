@@ -1,3 +1,4 @@
+@use 'partials/_vars.scss' as *;
 @use 'partials/_reset.scss' as *;
 @use 'partials/header.scss';
 
@@ -9,3 +10,27 @@
 //     border: 1px solid salmon;
 // }
 
+.ejercicio_1{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    
+    .ej_1_center{
+        width: 1180px;
+        padding:  1.5rem;
+        border: 1px solid #c9c9c9;
+        border-radius: 1.5rem;
+        box-sizing: border-box;
+        .ej_1_title{
+            .exercise_title{
+                margin-bottom: .5rem;
+            }
+            .exercise_description{
+                font-weight: 300;
+            }
+        }
+        .exercise_content {
+            margin-top: 1.5rem;
+        }
+    }
+}
