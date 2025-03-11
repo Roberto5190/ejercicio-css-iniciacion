@@ -1,0 +1,9 @@
+@use '../lib/vars' as *;
+
+.exercise_21_content {
+    margin-top: 1.5rem;
+
+    .primary_color {
+        color: $color-primario;
+    }
+}

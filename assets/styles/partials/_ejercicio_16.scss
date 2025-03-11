@@ -1,0 +1,22 @@
+.exercise_16_content {
+    margin-top: 1.5rem;
+    margin: 0 auto;
+
+    .menu {
+        display: flex;
+        justify-content: center;
+        ;
+        .menu_list{
+            display: flex;
+            gap: 1rem;
+            list-style: none;
+            li {
+                background-color: blue;
+                color: white;
+                padding: 0.5rem 1rem;
+                border-radius: .5rem;
+            }
+        }
+    }
+
+}

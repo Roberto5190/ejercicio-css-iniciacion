@@ -1,0 +1,18 @@
+.exercise_15_content {
+    margin-top: 1.5rem;
+    margin: 0 auto;
+    position: relative;
+    width: 300px;        
+    height: 200px; 
+    border: 1px solid black;
+
+    .position_absolute {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        background-color: blue;
+        width: 100px;
+        height: 100px;
+    }
+
+}

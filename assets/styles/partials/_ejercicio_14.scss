@@ -1,0 +1,11 @@
+.exercise_25_content {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+
+    .filter_img{
+        width: 100px;
+        filter: grayscale(100%);
+    }
+
+}

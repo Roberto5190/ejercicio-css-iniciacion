@@ -1,0 +1,27 @@
+.ejercicio {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+
+    .ej_center {
+        width: 1180px;
+        padding: 1.5rem;
+        border-radius: 1.5rem;
+        box-sizing: border-box;
+        background-color: #fff;
+        box-shadow: 2px 10px 15px rgba(0, 0, 0, 0.055);
+
+        .ej_title {
+            .exercise_title {
+                margin-bottom: .5rem;
+            }
+
+            .exercise_description {
+                font-weight: 400;
+                color: rgb(199, 199, 199);
+            }
+
+        }
+
+    }
+}

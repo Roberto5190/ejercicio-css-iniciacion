@@ -1,0 +1,30 @@
+.exercise_13_content {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+
+    .div_1 {
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+        margin-right: 20px;
+        background-color: lightblue;
+
+    }
+
+    .div_2 {
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+        margin-right: 20px;
+        background-color: rgb(103, 181, 207);
+    }
+
+    .div_3 {
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+        margin-right: 20px;
+        background-color: rgb(14, 100, 197);
+    }
+}

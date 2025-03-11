@@ -1,0 +1,35 @@
+.exercise_20_content {
+    margin-top: 1.5rem;
+
+    .menu {
+        display: flex;
+        justify-content: center;
+
+
+        .menu_list {
+            display: flex;
+            gap: 1rem;
+            list-style: none;
+
+            li {
+                background-color: blue;
+                color: white;
+                padding: 0.5rem 2.25rem;
+                border-radius: .5rem;
+                a{
+                    position: relative;
+                }
+                a::before {
+                    content: "🏠";
+                    font-size: 20px;
+                    margin-right: 1rem;
+                    position: absolute;
+                    left: -30px;
+                    top: 0;
+                }
+
+            }
+        }
+
+    }
+}

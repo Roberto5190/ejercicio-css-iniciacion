@@ -1,0 +1,13 @@
+.exercise_23_content {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+
+    .box_shadow {
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+        box-shadow: 2px 10px 15px rgba(0, 0, 0, 0.301);
+    }
+
+}

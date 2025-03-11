@@ -1,0 +1,26 @@
+.exercise_18_content {
+    margin-top: 1.5rem;
+
+    .animation {
+        width: 100px;
+        height: 100px;
+        background-color: blue;  
+        position: relative;         
+        
+        /* Animación */
+        animation: moverDerecha 3s ease-in-out infinite; 
+    }
+
+    @keyframes moverDerecha {
+        0% {
+            left: 0;  /* Empieza en el borde izquierdo */
+        }
+        50% {
+            left: 90%;  /* Mueve a la mitad */
+        }
+        100% {
+            left: 0%;  /* Mueve al borde derecho */
+        }
+    }
+
+}
