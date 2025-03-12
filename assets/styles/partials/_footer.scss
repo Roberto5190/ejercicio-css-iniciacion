@@ -1,0 +1,36 @@
+footer{
+    margin-top: 3rem;
+    padding: 1.75rem;
+    background-color: blue;
+    color: rgb(225, 233, 255);
+    display: flex;
+    justify-content: center;
+    font-weight: 300;
+    .footer_center{
+        width: 1180px;
+        padding: 0 1.5rem;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .footer_left{
+
+        }
+        .footer_right{
+            display: flex;
+            align-items: center;
+            gap: .5rem;
+            .github_logo{
+                display: flex;
+                align-items: center;
+                svg{
+                    width: 18px;
+                }
+            }
+            .github{
+
+
+            }
+        }
+    }
+}

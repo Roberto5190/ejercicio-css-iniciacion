@@ -355,6 +355,10 @@ header {
   display: flex;
   justify-content: center;
   background-color: #fff;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 9999;
 }
 header .header_center {
   width: 1180px;
@@ -384,7 +388,9 @@ header .header_center .header_left .header_name {
 }
 
 .ejercicio {
-  margin-top: 2rem;
+  margin-top: 3rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
   display: flex;
   justify-content: center;
 }
@@ -431,6 +437,11 @@ header .header_center .header_left .header_name {
   text-align: center;
 }
 
+@media (max-width: 770px) {
+  .exercise_5_content #contenedor {
+    width: 200px;
+  }
+}
 .exercise_6_content {
   margin-top: 1.5rem;
 }
@@ -463,6 +474,11 @@ header .header_center .header_left .header_name {
   text-align: center;
 }
 
+@media (max-width: 770px) {
+  .exercise_8_content .div_center {
+    width: 200px;
+  }
+}
 .exercise_9_content {
   margin-top: 1.5rem;
 }
@@ -479,6 +495,11 @@ header .header_center .header_left .header_name {
   text-decoration: underline;
 }
 
+@media (max-width: 770px) {
+  .exercise_9_content .div_center {
+    width: 200px;
+  }
+}
 .exercise_11_content {
   margin-top: 1.5rem;
 }
@@ -530,19 +551,22 @@ header .header_center .header_left .header_name {
   background-color: rgb(14, 100, 197);
 }
 
-.exercise_25_content {
+.exercise_14_content {
   margin-top: 1.5rem;
   display: flex;
   justify-content: center;
+  border: 1px solid black;
 }
-.exercise_25_content .filter_img {
+.exercise_14_content .position_relative {
   width: 100px;
-  filter: grayscale(100%);
+  height: 100px;
+  background-color: blue;
+  position: relative;
+  top: 15px;
 }
 
 .exercise_15_content {
-  margin-top: 1.5rem;
-  margin: 0 auto;
+  margin: 1.5rem auto;
   position: relative;
   width: 300px;
   height: 200px;
@@ -559,7 +583,6 @@ header .header_center .header_left .header_name {
 
 .exercise_16_content {
   margin-top: 1.5rem;
-  margin: 0 auto;
 }
 .exercise_16_content .menu {
   display: flex;
@@ -567,6 +590,7 @@ header .header_center .header_left .header_name {
 }
 .exercise_16_content .menu .menu_list {
   display: flex;
+  flex-wrap: wrap;
   gap: 1rem;
   list-style: none;
 }
@@ -647,6 +671,7 @@ header .header_center .header_left .header_name {
 }
 .exercise_20_content .menu .menu_list {
   display: flex;
+  flex-wrap: wrap;
   gap: 1rem;
   list-style: none;
 }
@@ -706,23 +731,97 @@ header .header_center .header_left .header_name {
        column-gap: 1rem;
 }
 
-.exercise_14_content {
-  margin-top: 1.5rem;
-}
-
-.exercise_26_content {
+.exercise_25_content {
   margin-top: 1.5rem;
   display: flex;
   justify-content: center;
 }
-.exercise_26_content .overlay_img {
+.exercise_25_content .filter_img {
   width: 100px;
   filter: grayscale(100%);
 }
-.exercise_26_content .overlay_img:hover {
-  overlay: hidden;
+
+.exercise_26_content {
+  margin-top: 1.5rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.exercise_26_content .overlay_img {
+  display: block;
+  width: 100px;
+  height: auto;
+}
+.exercise_26_content::after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: 20%;
+  height: 100%;
+  transform: translate(192%, 0);
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+.exercise_26_content:hover::after {
+  opacity: 1;
 }
 
+.exercise_27_content {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+.exercise_27_content .spinner {
+  width: 100px;
+  height: 100px;
+  border: 10px solid rgba(5, 155, 255, 0.418);
+  border-top-color: blue;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+footer {
+  margin-top: 3rem;
+  padding: 1.75rem;
+  background-color: blue;
+  color: rgb(225, 233, 255);
+  display: flex;
+  justify-content: center;
+  font-weight: 300;
+}
+footer .footer_center {
+  width: 1180px;
+  padding: 0 1.5rem;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .footer_center .footer_right {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+footer .footer_center .footer_right .github_logo {
+  display: flex;
+  align-items: center;
+}
+footer .footer_center .footer_right .github_logo svg {
+  width: 18px;
+}
 :root {
   font-family: "Poppins", sans-serif;
 }
@@ -731,5 +830,13 @@ html,
 body {
   background-color: #f1f1f1;
   height: 100vh;
+  width: 100wh;
+  margin: 0;
+  padding: 0;
   font-family: "Poppins", sans-serif;
+}
+html .app,
+body .app {
+  height: 100%;
+  width: 100%;
 }/*# sourceMappingURL=styles.css.map */

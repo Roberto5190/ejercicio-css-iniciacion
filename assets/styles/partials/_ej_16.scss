@@ -1,6 +1,6 @@
 .exercise_16_content {
     margin-top: 1.5rem;
-    margin: 0 auto;
+
 
     .menu {
         display: flex;
@@ -8,6 +8,7 @@
         ;
         .menu_list{
             display: flex;
+            flex-wrap: wrap;
             gap: 1rem;
             list-style: none;
             li {

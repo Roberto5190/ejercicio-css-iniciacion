@@ -2,30 +2,32 @@
 @use 'lib/reset' as *;
 @use 'partials/header';
 @use 'partials/ejercicio_box';
-@use 'partials/ejercicio_1';
-@use 'partials/ejercicio_2';
-@use 'partials/ejercicio_4';
-@use 'partials/ejercicio_5';
-@use 'partials/ejercicio_6';
-@use 'partials/ejercicio_7';
-@use 'partials/ejercicio_8';
-@use 'partials/ejercicio_9';
-@use 'partials/ejercicio_11';
-@use 'partials/ejercicio_12';
-@use 'partials/ejercicio_13';
-@use 'partials/ejercicio_14';
-@use 'partials/ejercicio_15';
-@use 'partials/ejercicio_16';
-@use 'partials/ejercicio_17';
-@use 'partials/ejercicio_18';
-@use 'partials/ejercicio_19';
-@use 'partials/ejercicio_20';
-@use 'partials/ejercicio_21';
-@use 'partials/ejercicio_22';
-@use 'partials/ejercicio_23';
-@use 'partials/ejercicio_24';
-@use 'partials/ejercicio_25';
-@use 'partials/ejercicio_26';
+@use 'partials/ej_1';
+@use 'partials/ej_2';
+@use 'partials/ej_4';
+@use 'partials/ej_5';
+@use 'partials/ej_6';
+@use 'partials/ej_7';
+@use 'partials/ej_8';
+@use 'partials/ej_9';
+@use 'partials/ej_11';
+@use 'partials/ej_12';
+@use 'partials/ej_13';
+@use 'partials/ej_14';
+@use 'partials/ej_15';
+@use 'partials/ej_16';
+@use 'partials/ej_17';
+@use 'partials/ej_18';
+@use 'partials/ej_19';
+@use 'partials/ej_20';
+@use 'partials/ej_21';
+@use 'partials/ej_22';
+@use 'partials/ej_23';
+@use 'partials/ej_24';
+@use 'partials/ej_25';
+@use 'partials/ej_26';
+@use 'partials/ej_27';
+@use 'partials/footer';
 
 
 
@@ -43,7 +45,17 @@ html,
 body {
     background-color: #f1f1f1;
     height: 100vh;
+    width: 100wh;
+    margin: 0;
+    padding: 0;
     font-family: 'Poppins', sans-serif;
+
+    .app{
+        height: 100%;
+        width: 100%;
+    }
+
 }
+
 
 

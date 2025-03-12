@@ -1,0 +1,30 @@
+.exercise_26_content {
+    margin-top: 1.5rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+    .overlay_img {
+        display: block;
+        width: 100px;
+        height: auto;
+    }
+
+    // Generamos el overlay con transparencia
+    &::after {
+        content: "";
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        width: 20%;
+        height: 100%;
+        transform: translate(192%, 0);
+        background: rgba(0, 0, 0, 0.5); // Color negro semi-transparente
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+    }
+
+    &:hover::after {
+        opacity: 1;
+    }
+}

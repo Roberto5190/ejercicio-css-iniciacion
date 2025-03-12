@@ -1,0 +1,14 @@
+.exercise_14_content {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+    .position_relative{
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+        position: relative;
+        top: 15px;
+    }
+
+}
